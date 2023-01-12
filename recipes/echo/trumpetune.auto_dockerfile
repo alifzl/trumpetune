@@ -1,0 +1,8 @@
+FROM python:3.6-slim
+RUN python3 -m pip install --upgrade --no-cache-dir pip trumpetune
+COPY requirements.txt /requirements.txt
+RUN python3 -m pip install --no-cache-dir -r /requirements.txt
+ADD . /recipe
+ENTRYPOINT ["/bin/sh", "-c"] 
+
+CMD ["ulimit -n 1000000 && python3 -m trumpetune --recipe /recipe --mode loop & python3 -m trumpetune --recipe /recipe"] 
