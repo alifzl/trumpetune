@@ -8,3 +8,6 @@
 ```bash
 trumpetune --recipe ./echo
 ```
+
+
+![](https://raw.githubusercontent.com/alifzl/trumpetune/master/trumpetune.png)
