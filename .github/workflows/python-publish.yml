@@ -4,10 +4,11 @@
 name: Upload Python Package
 
 on:
+  workflow_dispatch:
   push:
     branches: [ master ]
-    paths:
-      - 'setup.py'
+    tags:
+      - release
 
 jobs:
   deploy:
