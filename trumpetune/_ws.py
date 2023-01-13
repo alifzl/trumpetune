@@ -262,7 +262,6 @@ class WebSocketHandler(WSGIHandler):
     def process_result(self):
         if "wsgi.websocket" in self.environ:
             if self.result is None:
-                # Fuckin Donno
                 return
             # Flushing result is required for werkzeug compatibility
             for elem in self.result:
