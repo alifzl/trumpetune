@@ -3,7 +3,7 @@
 <script>
 
 $: {
-  document.title = "trumpetune monitor"
+  document.title = "trumpeTune monitor"
 }
 
 import {
@@ -187,7 +187,7 @@ async function getFileResult() {
 }
 </script>
 
-<Header company="trumpetune" platformName="monitor" bind:isSideNavOpen>
+<Header company="trumpeTune" platformName="monitor" bind:isSideNavOpen>
 	<svelte:fragment slot="skip-to-content">
 	  <SkipToContent />
 	</svelte:fragment>
@@ -201,8 +201,8 @@ async function getFileResult() {
 	<!-- <SideNav bind:isOpen={isSideNavOpen} rail>
 		<SideNavItems>
 			<SideNavLink icon={Home32} text="Home" href="/" isSelected />
-			<SideNavLink icon={Catalog32} text="Logs (ایشالا در آینده...)" href="/" />
-			<SideNavLink icon={ChartComboStacked32} text="Graphs (ایشالا در آینده...)" href="/" />
+			<SideNavLink icon={Catalog32} text="Logs (coming soon)" href="/" />
+			<SideNavLink icon={ChartComboStacked32} text="Graphs (coming soon)" href="/" />
 		</SideNavItems>
 	</SideNav> -->
 </Header>
@@ -239,6 +239,7 @@ async function getFileResult() {
 					<Button icon={Terminal32} on:click={() => (CMD_TEXTS = [sync_curl_text, async_curl_text, res_curl_text])} kind="secondary" size="small" iconDescription="Copy cURL command">cURL</Button>
 					<Button icon={LogoPython32} on:click={() => (CMD_TEXTS = [sync_python_text, async_python_text, res_python_text])} kind="secondary" size="small" iconDescription="Copy Python code">Python</Button>
 					<Button href="https://curlconverter.com/" kind="ghost" size="small">Other Languages (curlconverter)</Button>
+					<Button href="https://github.com/alifzl/trumpetune/blob/main/inference.md#inference" kind="ghost" size="small">Inference documentation</Button>
 				</ButtonSet>
 				
 				

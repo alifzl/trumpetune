@@ -20,7 +20,7 @@ TIMEOUT = os.getenv("TIMEOUT", "1000")
 if not RECIPE or not MODE:
     import argparse
 
-    parser = argparse.ArgumentParser(description="CLI for trumpetune")
+    parser = argparse.ArgumentParser(description="CLI for trumpeTune")
     parser.add_argument(
         "--recipe",
         type=str,
@@ -138,7 +138,7 @@ def rest():
         "timeout": TIMEOUT,
     }
 
-    print(f"trumpetune active at http://{host}:{port}")
+    print(f"trumpeTune active at http://{host}:{port}")
 
     StandaloneApplication(app, options).run()
 
@@ -197,7 +197,7 @@ def build(mode="build_rest"):
             f'CMD ["ulimit -n 1000000 && python3 -m trumpetune --recipe {recipe_base_name} --mode loop & python3 -m trumpetune --recipe {recipe_base_name} --mode websocket"] \n'
         )
 
-    dockerfile_path = os.path.join(RECIPE, "trumpetune.auto_dockerfile")
+    dockerfile_path = os.path.join(RECIPE, "trumpeTune.auto_dockerfile")
     _dockerignore_f = open(os.path.join(RECIPE, ".dockerignore"), "w")
     _dockerignore_f.write("*.request_index\n*.results_index\n*.log_index")
     _dockerignore_f.flush()
