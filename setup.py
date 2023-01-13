@@ -18,7 +18,7 @@ URL = "https://github.com/alifzl/trumpetune"
 EMAIL = "a.fazeli95@gmail.com"
 AUTHOR = "ALI FAZELI"
 REQUIRES_PYTHON = ">=3.6.0"
-VERSION = "2.2.7rc3"
+VERSION = "2.2.8"
 
 # What packages are required for this module to be executed?
 REQUIRED = [
