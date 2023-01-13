@@ -113,14 +113,6 @@ setup(
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: Implementation :: CPython",
-        "Development Status :: 6 - Mature",
-        "Intended Audience :: Developers",
-        "Operating System :: OS Independent",
-        "Natural Language :: English",
-        "Topic :: Deploy Machine Learning in production",
-        "Topic :: Software Development :: Libraries",
-        "Topic :: Machine Learning Performance Observations",
-        "Topic :: Utilities"
     ],
     # $ setup.py publish support.
     cmdclass={
