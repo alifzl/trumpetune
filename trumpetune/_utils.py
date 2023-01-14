@@ -111,8 +111,8 @@ def get_request_index_results_index(predictor_id, is_first=False, is_last=False)
 
 
 FASTDEPLOY_UI_PATH = os.getenv(
-    "FASTDEPLOYUI",
-    os.path.join(os.path.split(os.path.abspath(__file__))[0], "fastdeploy-ui"),
+    "TRUMPETUNEUI",
+    os.path.join(os.path.split(os.path.abspath(__file__))[0], "trumpetune-ui"),
 )
 
 # No real use in making these configurable.
