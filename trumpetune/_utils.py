@@ -110,7 +110,7 @@ def get_request_index_results_index(predictor_id, is_first=False, is_last=False)
         ), Index(os.path.join(QUEUE_DIR, f"{predictor_id}.intermediate_index"))
 
 
-TRUMPETUNEUI_UI_PATH = os.getenv(
+TRUMPETUNE_UI_PATH = os.getenv(
     "TRUMPETUNEUI",
     os.path.join(os.path.split(os.path.abspath(__file__))[0], "trumpetune-ui"),
 )
