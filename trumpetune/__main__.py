@@ -159,7 +159,7 @@ def build(mode="build_rest"):
     dockerfile_lines = []
 
     if not BASE:
-        base = "python:3.6-slim"
+        base = "python:3.9-slim"
     else:
         base = BASE
 

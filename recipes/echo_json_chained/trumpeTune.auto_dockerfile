@@ -1,8 +1,7 @@
-FROM python:3.6-slim
+FROM python:3.9-slim
 RUN python3 -m pip install --upgrade --no-cache-dir pip trumpetune
-COPY requirements.txt /requirements.txt
-RUN python3 -m pip install --no-cache-dir -r /requirements.txt
 ADD . /recipe
+RUN cd /recipe && python3 -m pip install --no-cache-dir -r requirements.txt
 RUN sudo chmod -R a+rw /recipe || chmod -R a+rw /recipe && cd /recipe && python3 predictor.py
 ENTRYPOINT ["/bin/sh", "-c"] 
 
