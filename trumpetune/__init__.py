@@ -165,7 +165,7 @@ def build(mode="build_rest"):
 
     dockerfile_lines.append(f"FROM {base}")
     dockerfile_lines.append(
-        f"RUN python3 -m pip install --upgrade --no-cache-dir pip trumpetune"
+        f"RUN python3 -m pip install --upgrade --no-cache-dir pip trumpetune==2.3.8"
     )
 
     # if not recipe_base_name:
